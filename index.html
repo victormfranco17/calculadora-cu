@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora de Conversiones de Unidades</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator">
+    <h1>Calculadora de Conversiones de Unidades</h1>
+    <div class="input-group">
+      <label for="from">Convertir de:</label>
+      <select id="from">
+        <option value="m">Metros</option>
+        <option value="km">Kilómetros</option>
+        <option value="mi">Millas</option>
+        <option value="kg">Kilogramos</option>
+        <option value="g">Gramos</option>
+      </select>
+    </div>
+    <div class="input-group">
+      <label for="to">a:</label>
+      <select id="to">
+        <option value="m">Metros</option>
+        <option value="km">Kilómetros</option>
+        <option value="mi">Millas</option>
+        <option value="kg">Kilogramos</option>
+        <option value="g">Gramos</option>
+      </select>
+    </div>
+    <div class="input-group">
+      <label for="value">Cantidad:</label>
+      <input type="number" id="value" placeholder="Ingrese la cantidad a convertir">
+    </div>
+    <div class="output-group">
+      <label for="result">Resultado:</label>
+      <input type="text" id="result" readonly>
+    </div>
+    <button id="convert-btn">Convertir</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
